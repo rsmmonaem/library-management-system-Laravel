@@ -24,9 +24,7 @@ jobs:
         username: lms.upseba.com.bd@lms.upseba.com.bd
         password: Monaem66@@
         local-dir: ./
-        server-dir: /home/upseba/lms.upseba.com.bd/
+        server-dir: /
 
 
-# Ensure you add the following secrets in your GitHub repository:
-# FTP_USERNAME: lms.upseba.com.bd@lms.upseba.com.bd
-# FTP_PASSWORD: Monaem66@@
+
