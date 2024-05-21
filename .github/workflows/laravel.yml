@@ -13,6 +13,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
+    - name: List files for debugging
+      run: ls -la
+      shell: bash
+
     - name: Setup FTP deployment
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
@@ -20,5 +24,8 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./
-        server-dir: /home/upseba/lms.upseba.com.bd/
+        server-dir: home/upseba/lms.upseba.com.bd/
 
+# Ensure you add the following secrets in your GitHub repository:
+# FTP_USERNAME: lms.upseba.com.bd@lms.upseba.com.bd
+# FTP_PASSWORD: Monaem66@@
