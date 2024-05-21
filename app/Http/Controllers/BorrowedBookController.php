@@ -21,8 +21,6 @@ class BorrowedBookController extends Controller
         $borrowedBooks = BorrowedBook::with('member', 'book')
                             ->where('MemberID', $MemberID)
                             ->get();
-
-        // Return the list of borrowed books as a JSON response
         return response()->json($borrowedBooks);
     }
 
