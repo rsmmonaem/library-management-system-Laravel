@@ -19,5 +19,6 @@ jobs:
         server: ftp.upseba.com.bd
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./ # The local directory to deploy
-        server-dir: /home/upseba/lms.upseba.com.bd
+        local-dir: ./
+        server-dir: /home/upseba/lms.upseba.com.bd/
+
