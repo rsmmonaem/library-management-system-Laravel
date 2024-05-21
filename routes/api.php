@@ -20,6 +20,7 @@ Route::middleware('auth:sanctum')->group(function () {
         return $request->user();
     });
     Route::get('books', [BookController::class, 'index']);
+    Route::post('borrow-book', [BorrowedBookController::class, 'store']);
     Route::resource('authors', AuthorController::class);
 
 });
@@ -28,7 +29,7 @@ Route::get('member/{MemberID}', [MemberController::class, 'show']);
 
 Route::resource('borrowed-books', BorrowedBookController::class);
 Route::get('borrowed-book/{BorrowID}', [BorrowedBookController::class, 'show']);
-Route::post('borrow-book', [BorrowedBookController::class, 'store']);
+// Route::post('borrow-book', [BorrowedBookController::class, 'store']);
 Route::put('borrowed-books/{borrowID}/return/{memberID}', [BorrowedBookController::class, 'returnBook']);
 Route::patch('update-borrow-book/{BorrowID}', [BorrowedBookController::class, 'update']);
 Route::delete('delete-borrow-book/{BorrowID}', [BorrowedBookController::class, 'destroy']);
