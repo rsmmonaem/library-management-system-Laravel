@@ -21,8 +21,8 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: ftp.upseba.com.bd
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        username: lms.upseba.com.bd@lms.upseba.com.bd
+        password: Monaem66@@
         local-dir: ./
         server-dir: /home/upseba/lms.upseba.com.bd/
 
