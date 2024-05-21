@@ -15,7 +15,7 @@ class BorrowedBookController extends Controller
         return response()->json($borrowedBooks);
     }
 
-    public function show_by_member($MemberId)
+    public function showByMember($MemberId)
     {
         // Get the borrowed books for the specified MemberID
         $borrowedBooks = BorrowedBook::with('member', 'book')
