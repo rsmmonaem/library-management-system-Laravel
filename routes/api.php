@@ -26,7 +26,7 @@ Route::middleware('auth:sanctum')->group(function () {
 Route::resource('members', MemberController::class);
 Route::get('member/{MemberID}', [MemberController::class, 'show']);
 
-Route::resource('borrowed-books', BorrowedBookController::class);
+Route::resource('borrowed-books-list', BorrowedBookController::class);
 Route::resource('borrowed-books/{MemberId}', [BorrowedBookController::class, 'show_by_member']);
 Route::get('borrowed-book/{BorrowID}', [BorrowedBookController::class, 'show']);
 Route::post('borrow-book', [BorrowedBookController::class, 'store']);
