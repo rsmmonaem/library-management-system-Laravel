@@ -25,6 +25,7 @@ jobs:
         password: Monaem66@@
         local-dir: ./
         server-dir: /
+        exclude: .gitignore
 
 
 
