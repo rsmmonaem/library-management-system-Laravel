@@ -28,7 +28,7 @@ Route::get('member/{MemberID}', [MemberController::class, 'show']);
 
 Route::get('borrowed-books-list', [BorrowedBookController::class, 'index']);
 
-Route::get('borrowed-books/{MemberId}', [BorrowedBookController::class, 'showByMember']);
+Route::get('borrowed-books/{MemberID}', [BorrowedBookController::class, 'showByMember']);
 
 Route::get('borrowed-book/{BorrowID}', [BorrowedBookController::class, 'show']);
 Route::post('borrow-book', [BorrowedBookController::class, 'store']);
