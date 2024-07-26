@@ -16,5 +16,6 @@ class Member extends Model
     }
 
 
+
 }
 
